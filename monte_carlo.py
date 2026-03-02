@@ -17,8 +17,7 @@ def forWay(n):
 
     time_end = time.perf_counter()
 
-    print(pi)
-    print(time_end - time_start)
+    return pi, time_end - time_start
 
 
 def numpyWay(n):
@@ -34,8 +33,7 @@ def numpyWay(n):
 
     time_end = time.perf_counter()
 
-    print(pi)
-    print(time_end - time_start)
+    return pi, time_end - time_start, x, y, z
 
 
 if __name__ == '__main__':
