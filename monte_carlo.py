@@ -47,7 +47,7 @@ def forWayBall(n):
         if x**2 + y**2 + z**2 <= 1:
             count += 1
 
-    pi = 8 * count / n
+    pi = 6 * count / n
 
     time_end = time.perf_counter()
 
@@ -62,9 +62,9 @@ def numpyWayBall(n):
     z = np.random.uniform(-1, 1, n)
 
     w = x**2 + y**2 + z**2
-    count = np.sum(z <= 1)
+    count = np.sum(w <= 1)
 
-    pi = 8 * count / n
+    pi = 6 * count / n
 
     time_end = time.perf_counter()
 
