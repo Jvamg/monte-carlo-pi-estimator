@@ -3,7 +3,7 @@ import time
 import numpy as np
 
 
-def forWay(n):
+def forWayCircle(n):
     time_start = time.perf_counter()
 
     count = 0
@@ -20,7 +20,7 @@ def forWay(n):
     return pi, time_end - time_start
 
 
-def numpyWay(n):
+def numpyWayCircle(n):
     time_start = time.perf_counter()
     count = 0
     x = np.random.uniform(-1, 1, n)
@@ -39,5 +39,5 @@ def numpyWay(n):
 if __name__ == '__main__':
     n = 10000000
 
-    forWay(n)
-    numpyWay(n)
+    forWayCircle(n)
+    numpyWayCircle(n)
